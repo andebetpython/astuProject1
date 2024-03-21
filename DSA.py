@@ -1,5 +1,5 @@
 
-def dictionary(list1):
+def combining_anagrams_index(list1):
     d={}
     for i in range(len(list1)):
         word="".join(sorted(list1[i]))
@@ -10,4 +10,4 @@ def dictionary(list1):
     return d
 
 a=["cat","dog","god","tca","act"]
-print(dictionary(a))
+print(combining_anagrams_index(a))
