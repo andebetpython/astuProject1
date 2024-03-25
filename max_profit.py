@@ -18,15 +18,4 @@ def climb_star(star):
         prev2=current
     return prev2
 print(climb_star(7))
-def first_last(array,target):
-    left=0
-    right=len(array)-1
-    while left<=right:
-        if array[left]!=target:
-            left+=1
-        if array[right]!=target:
-            right-=1
-    return [left,right]
-ar=[1,2,3,3,3,4]
-print(first_last(ar,3))
 
