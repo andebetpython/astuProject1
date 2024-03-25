@@ -47,26 +47,8 @@ def daynamic_slaiding_window(lst,target):
     return x1
 print(daynamic_slaiding_window(at,7))
 
-def longest_palindrome_sub_string(string):
-    pointer1=0
-    pointer2=0
-    m=len(string)
-    for i in range(m):
-        if i>0 and string[i]!=string[i-1]:
-            m=string[pointer1:i+1]
-            if m==m[::-1]:
-                pointer2=max(pointer2,i-pointer1+1)
-            else:
-                pointer1+=1
-        else:
-            pointer1=i
-    return pointer2
-st="ANDEBET"
-print(longest_palindrome_sub_string(st))
-print("astu")
-#finding the tehe largest sub array with given length using static window
 
-
+#finding the the largest sub array with given length using static window
 def static_sliding_window(arrr,k):
    current_sum=sum(arrr[:k])
    maximum_val=current_sum
