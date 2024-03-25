@@ -9,10 +9,3 @@ def group_anagram(list1):
     return list2
 s=["ate","eat","tea","dog","god"]
 print(group_anagram(s))
-
-l=[1,2,3,4,5,6,7,8,9]
-for x in l:
-    n=l.remove(x)
-    print(l)
-g=5 or 10
-print(g)
