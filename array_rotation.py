@@ -23,16 +23,16 @@ result = rotate_array(arr, d)
 # Print the rotated array
 print("Original Array:", arr)
 print("Rotated Array:", result)
-def find_target(rotted_array,target):
+def find_numberof_roptation(rotted_array):
     left = 0
     right = len(rotted_array) - 1
     while left <= right:
-        mid = len(rotted_array) // 2
-        if rotted_array[mid] ==target and mid > 0:
+        mid = (left+right)//2
+        if rotted_array[mid]<rotated_array[mid-1] and mid>0:
             return mid
         elif rotted_array[mid] < rotted_array[len(rotted_array) - 1]:
             right = mid - 1
         else:
             left = mid + 1
 rot=[5,6,9,0,2,3,4]
-print(find_target(rot,2))
+print(find_numberof_rotation(rot))
