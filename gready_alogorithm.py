@@ -1,5 +1,6 @@
 #activity selection problem
-'''def activity():
+#method1
+def activity():
     act=["A1","A2","A3"]
     start=[12,10,20]
     finish=[25,20,30]
@@ -10,7 +11,8 @@
     for i in range(3):
         if h[0]<=start[i]:
             print(sorted_act[i+1])
-print(activity())'''
+print(activity())
+#method2
 def max_activities(activities, start, finish):
     n = len(activities)
     s=sorted(finish)
@@ -26,7 +28,3 @@ start = [12, 10, 20]
 finish = [25, 20, 30]
 result = max_activities(activities, start, finish)
 print(result)
-a="astu"
-for i in range(len(a)):
-    print(a[0:i])
-    break
